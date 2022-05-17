@@ -1,0 +1,23 @@
+@import "src/app/styles/colors";
+@import "src/app/styles/font";
+@import "src/app/styles/variables";
+
+.search {
+  display: flex;
+  height: 36px;
+  border-radius: 32px;
+  box-sizing: border-box;
+  align-items: center;
+  width: 36px;
+  padding-left: 4px;
+  cursor: pointer;
+  flex-direction: row-reverse;
+
+  &:hover {
+    background-color: $black-08;
+  }
+
+  @media (max-width: $small) {
+    display: none;
+  }
+}
